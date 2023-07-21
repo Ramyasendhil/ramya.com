@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        #id1 {
+            text-align: center;
+            color: blueviolet;
+            font-family: 'Lobster', cursive;
+        }
+
+        #alt {
+            justify-content: start;
+            color: black;
+            font-size: 25px;
+        }
+
+        #name {
+            text-align: center;
+            color: black;
+            font-family: 'Lobster', cursive;
+        }
+
+        #note {
+            text-align: center;
+            justify-content: center;
+            color: rgb(115, 18, 180);
+            font-size: 20px;
+        }
+
+        #name {
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+        }
+
+        #phn {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #email {
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+
+        #pwd {
+            margin-top: 10px;
+        }
+
+        #click {
+            margin-top: 10px;
+        }
+
+        .login {
+            border: solid 3px;
+            text-align: center;
+            margin-left: 350px;
+            margin-right: 350px;
+            margin-top: 100px;
+            font-size: 25px;
+            padding-left: 300px;
+            box-shadow: 2px 2px;
+            background-image: cover;
+        }
+
+        #button {
+            font-size: 20px;
+            border: solid 2px;
+            margin-top: -100px;
+            margin-bottom: 80px;
+        }
+
+        .img {
+            padding: 0;
+            margin-left: -350px;
+            padding-left: 0;
+            margin-bottom: -186px;
+        }
+
+        #kan {
+            margin-left: 650px;
+        }
+
+        #team {
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<script>
+    const alpha = /^[A-Za-z]+$/;
+    const number = /^([0-9]{5,})+$/;
+    const email = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+    // const pass = /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{7,15}$/;
+    function myfun() {
+        const name = document.getElementById("name").value;
+        const contact = document.getElementById("phn").value;
+        const mail = document.getElementById("email").value;
+        const pwd = document.getElementById("pwd").value;
+
+        if (alpha.test(name) && email.test(mail) && number.test(contact)) {
+            alert("done")
+            // const myobj = { user: name, number: contact, email: mail, pass: pwd }
+            //const json = JSON.stringify(myobj)
+            //document.write(json)
+            // localStorage.setItem("JSON", json)
+            const empty = localStorage.getItem("users")
+
+            // Retrieve existing user data from localStorage
+            const arrayObj = JSON.parse(empty) || [];
+
+            //Add new user data to the array
+            arrayObj.push({ user: name, number: contact, email: mail, pass: pwd });
+            const myJson = JSON.stringify(arrayObj);
+
+            // Store the updated array back into localStorage
+            localStorage.setItem("users", myJson)
+
+            window.location.assign(" applynow1.html")
+        }
+        else {
+            alert("not done")
+        }
+    }
+</script>
+
+<body>
+    <ul class="nav justify-content-end">
+        <a class=" logoname navbar-brand" id="nam" href="#"><img src="./img/ban2.jpg" alt="" width="50px"
+            height="50px">
+        </a>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main page.html">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about as.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact page.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="applynow.html" >APPLY NOW</a>
+        </li>
+    </ul><br>
+    <div id="id1">
+        <h1>Apply Now</h1>
+    </div><br>
+    <center>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            SERVERS
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a class="dropdown-item" href="personal.html">personal loan</a></li>
+            <li><a class="dropdown-item" href="houseloan.html">Housing loan</a></li>
+            <li><a class="dropdown-item" href="mechinary.html">machinery loan</a></li>
+            <li><a class="dropdown-item" href="business.html">Business loan</a></li>
+        </ul>
+    </div>
+</center>
+    <div>
+        <div>
+            <table id="text">
+                <tr>
+                    <td><video autoplay loop muted width="500px" height="500px">
+                            <source src="./img/apply v1.mp4" />
+                        </video>
+
+                    <td><i id="content">
+                            <b>
+                                <p class="line" id="alt">
+                                    Loans are not very flexible - you could be paying interest on funds you're not
+                                    using. You could have trouble making monthly repayments if your customers don't pay
+                                    you promptly, causing cashflow problems. In some cases, loans are secured against
+                                    the assets of the business or your personal possessions, eg your home.
+
+                                </p>
+                            </b>
+
+                        </i></td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div>
+        <div>
+            <table id="text">
+                <tr>
+
+                    <td><i id="content">
+                            <b>
+                                <p class="line" id="alt">
+
+                                    Borrowing money can fund a new home, pay for college tuition or help start a new
+                                    business. Financing options range from traditional financial institutions, such as
+                                    banks, credit unions, and financing companies, to peer-to-peer lending (P2P) or a
+                                    loan from a 401(k) plan.
+
+                                </p>
+                            </b>
+                    <td><video autoplay loop muted width="500px" height="500px">
+                            <source src="./img/applyv.mp4" />
+                        </video>
+                        </i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="name">
+        <h1>Drop us message for Any Query</h1>
+    </div><br>
+    <div id="note">
+        <p>
+            Ssarlo Private Limited is an unlisted private company incorporated on 04 March, 2021.<br> It is classified
+            as a
+            private limited company and is located in Tirupur, Tamil Nadu.
+        </p>
+    </div>
+    <div>
+
+        <div class="login">
+            <div class="img">
+                <img src="./img/per6.jpg" alt="" height="380" width="330">
+            </div>
+            <div id="from">
+            <label>name</label>
+            <input type="test" id="name" /><br>
+            <label>contact</label>
+            <input tpye="number" id="phn" /><br>
+            <label>email</label>
+            <input type="email" id="email" /><br>
+            <label>password</label>
+            <input type="password" id="pwd" /><br><br>
+            <input id="button" type="submit" value="click" onclick="myfun()" /><br>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div id="kan">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-solid fa-hashtag"></i>
+        </div>
+        <hr>
+        <div id="team">
+            @2023 All copy rights
+        </div>
+    </footer>
+</body>
+
+</html>

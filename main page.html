@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lobster&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        #pumo {
+            text-align: start;
+            text-shadow: 5px5px pink;
+            color: rgb(221, 40, 146);
+            animation: mymove 2s 1;
+            animation-timing-function: ease;
+        }
+        @keyframes mymove{
+            from{
+                left: 0px;
+            } 
+            to{
+                left: 300px;
+            }
+        }
+
+        #long {
+            text-align: justify;
+            color: rgb(110, 77, 226);
+
+        }
+
+        #text {
+            text-align: center;
+        }
+
+        #black {
+            font-size: larger;
+            font-style: italic;
+            font-family: 'Pacifico', cursive;
+        }
+
+        #my {
+            text-align: center;
+            font-style: italic;
+
+        }
+
+        #max {
+            text-align: center;
+            font-style: italic;
+
+        }
+
+        #any {
+            color: rgb(221, 90, 15);
+        }
+
+        #tye {
+            color: rgb(110, 15, 173);
+        }
+
+        #card {
+            color: rgb(243, 107, 17);
+        }
+
+        #dit {
+            color: rgb(110, 15, 173);
+        }
+
+        #to {
+
+            padding-bottom: 800;
+        }
+
+        #div {
+            background-color: rgb(245, 208, 139);
+        }
+
+        #logo {
+            text-align: center;
+        }
+
+        #go {
+            padding: 50px;
+        }
+
+        #demo {
+            text-align: center;
+            color: blueviolet;
+            font-style: italic;
+            font-size: 25;
+        }
+
+        #date {
+            margin-left: 650px;
+        }
+
+        #vero {
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgb(162, 221, 236);
+
+        }
+
+        #web {
+            text-align: center;
+            color: rgb(16, 183, 212);
+            font-style: italic;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        #skill {
+            justify-content: center;
+            font-style: italic;
+        }
+
+        #edu {
+            color: rgb(115, 17, 207);
+        }
+
+        #the {
+            color: rgb(127, 7, 240);
+        }
+
+        #you {
+            color: rgb(116, 7, 218);
+        }
+
+        #me {
+            color: rgb(133, 20, 240);
+        }
+
+        #play {
+            color: brown;
+            font-style: italic;
+        }
+
+        #with {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(11, 22, 177);
+            font-style: italic;
+            justify-content: center;
+        }
+
+        .intex {
+            justify-content: space-around;
+            display: flex;
+            border: solid;
+            font-size: 30px;
+
+        }
+
+        #mango {
+            font-size: medium;
+            justify-content: space-around;
+            font-family: 'Lobster', cursive;
+            font-size: 20;
+        }
+
+        #fully {
+            font-size: medium;
+            justify-content: space-around;
+            font-family: 'Lobster', cursive;
+            font-size: 20;
+        }
+
+        #cla {
+            font-size: medium;
+            justify-content: space-around;
+            font-family: 'Lobster', cursive;
+            font-size: 20;
+        }
+
+        #table {
+            font-size: medium;
+            justify-content: space-around;
+            font-family: 'Lobster', cursive;
+            font-size: 20;
+        }
+        #nan{
+            text-align: center;
+            margin-top: -20px;
+            margin-left: -20px;
+            justify-content: center;
+        }
+
+        #boo {
+            text-align: center;
+        }
+
+        #nam {
+            color: rgb(10, 169, 209);
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            margin-left: 40px;
+            font-family: 'Leckerli One', cursive;
+            padding-left: 70px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav justify-content-end">
+        <a class=" logoname navbar-brand" id="nam" href="#"><img src="./img/ban2.jpg" alt="" width="50px"
+            height="50px">
+        </a>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about as.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact page.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="applynow.html">APPLY NOW</a>
+        </li>
+    </ul>
+    <div class="card bg-dark text-white">
+        <img src="./img/pexels-kampus-production-8353779.jpg" class="card-img" alt="..." width="500px" height="600px">
+        <div class="card-img-overlay">
+            <h1 class="card-title" id="pumo">Good advice is never as helpful as an interest-free loan</h1>
+            <p class="card-text" id="long">Get the finances to start, build, and grow your business.</p>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    SERVERS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a class="dropdown-item" href="personal.html">personal loan</a></li>
+                    <li><a class="dropdown-item" href="houseloan.html">Housing loan</a></li>
+                    <li><a class="dropdown-item" href="mechinary.html">machinery loan</a></li>
+                    <li><a class="dropdown-item" href="business.html">Business loan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><br><br>
+    <table id="text">
+        <tr>
+            <td> <img class="jreey" src="./img/name3.jpg" class="img-fluid rounded-start" alt="..." width="400px"
+                    height="400px" /></td>
+
+            <td><i id="content" id="black">
+                    <h2>why choose us?</h2><br>Our best-in-class ratings and dedication to making ethical decisions mean
+                    we're a bank you can trust regardless of economic fluctuations. And that's earned us the distinction
+                    of being repeatedly named one of the World's Most Ethical Companies® by Ethisphere.
+                    U.S. Bank maintains strong capital and liquidity positions, along with a disciplined asset liability
+                    management framework, to ensure sound balance sheet actions. Our investment portfolio is
+                    well-balanced, with appropriate levels of liquidity to help ensure we are prepared for unexpected
+                    events.
+                    <br>
+                </i></td>
+        </tr>
+    </table><br><br><br>
+    <div>
+        <div id="my">
+            <h2>**************Our Services*************</h2>
+        </div><br><br>
+        <div id="div2">
+            <div class="row" id="max">
+                <div class="col-sm-6" id="to">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="any">Secured Loans</h3>
+                            <h5 class="card-title"> Loan Amount:</h5>
+                            <b>
+                                <p class="card-text" id="tye">Minimum - 10 Lakhs<br>
+                                    Maximum - 5 Crores</p>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="card"> Unsecured Loans</h3>
+                            <h5 class="card-title"> Loan Amount:</h5>
+                            <b>
+                                <p class="card-text" id="dit">Minimum - 1 Lakhs<br>
+                                    Maximum - 1 Crore<br>
+                                    No collateral required</p>
+                            </b>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div id="div2">
+        <div class="row" id="max">
+            <div class="col-sm-6" id="to">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 id="any">
+                            Bill Discounting and Trade <br>Financing</h3>
+                        <h5 class="card-title"> Loan Amount:</h5>
+                        <b>
+                            <p class="card-text" id="tye">
+                                Minimum - 10 Lakhs<br>
+                                Maximum - 10 Crores
+                            </p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 id="card">Personal Loans </h3>
+                        <h5 class="card-title"> Loan Amount:</h5>
+                        <b>
+                            <p class="card-text" id="dit">Minimum - 1 Lakhs<br>
+                                Maximum - 20 Lakhs<br>
+                                No collateral required</p>
+                        </b>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br>
+    <div id="logo">
+        <h1>Loan getting process</h1>
+    </div><br>
+    <div>
+        <h1></h1>
+    </div>
+    <div id="go">
+        <img src="./img/pexels-ono-kosuki-5999936.jpg" alr="" width="300px" height="300px" />
+        <img src="./img/bank4.jpg" alr="" width="300px" height="300px" />
+        <img src="./img/pro9.jpg" alr="" width="300px" height="300px" />
+        <img src="./img/nam1.jpg" alr="" width="300px" height="300px" />
+    </div>
+    <hr />
+    <div id="demo">
+        <h1>Testimonials</h1>
+    </div><br>
+    <div id="web">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <b>
+                        <p>
+                            " I got a personal loan from here and it served a lot of purposes for me. The loan process
+                            was
+                            very simple and the interest rate was very reasonable. <br>I would definitely recommend this
+                            company
+                            to anyone who is looking for a personal loan."
+                        </p>
+                    </b>
+                </div>
+                <div class="carousel-item">
+                    <b>
+                        <p>
+                            "I got a business loan from V2S Fin Assist. The coordination and responses from the
+                            company's
+                            representatives were flawless, timely and very smooth."
+                        </p>
+                    </b>
+                </div>
+                <div class="carousel-item">
+                    <b>
+                        <p>"V2S Fin Assist Business loan has provided me with great customer service. The company
+                            representatives are always responsive and coordinated.<br> They have never left me waiting
+                            or
+                            feeling lost during the process."</p>
+                    </b>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <hr /><br><br>
+    <div id="play">
+        <center>
+            <h2>*****************Our Features******************</h2>
+        </center>
+    </div><br>
+    <div id="with">
+        <p>We have always verified that our entire product line is manufactured<br> using top-grade of raw materials in
+            order to fulfill the necessary quality guidelines.
+        </p>
+    </div><br>
+    <div id="skill">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="edu">personal loan</h5>
+                        <p class="card-text">Personal Loan is an unsecured loan and one of the best loans that can be
+                            used for marriage expenses, paying medical bills or planning your dream vacation. Personal
+                            Loans can act as a financial cushion for you at the time of emergency.
+                        </p>
+                        <a href="personal.html" class="btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="the"> Housing loan</h5>
+                        <p class="card-text">A home loan is an amount an individual borrows from a financial institution
+                            such as a housing finance company to buy a new or a resale home, construct a home or
+                            renovate or extend an existing one.
+                        </p>
+                        <a href="houseloan.html" class="btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="you"> machinery loan </h5>
+                        <p class="card-text">It is a business loan to aid entrepreneurs, small business owners, or
+                            companies to procure machinery or equipment for various business operational purposes. With
+                            this loan, you can either purchase new machinery or upgrade your existing machinery.
+                        </p>
+                        <a href="mechinary.html" class="btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="me"> Business loan</h5>
+                        <p class="card-text">
+                            Business entities such as proprietary concerns, partnership firms, private limited
+                            companies, self-employed professionals, and self-employed non-professionals can apply for a
+                            Bajaj Finserv Business Loan.</p>
+                        <a href="business.html" class="btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="intex">
+        <div>
+            <h2><span class="counter" id="count">000</span>+</h2>
+            <p id="mango">Personal Loan</p>
+        </div>
+        <div>
+            <h2><span class="counter1" id="count1">000</span>+</h2>
+            <p id="fully">Houes Loan</p>
+        </div>
+        <div>
+            <h2><span class="counter2" id="count2">000</span>+</h2>
+            <p id="table">mechinary Loan</p>
+        </div>
+        <div>
+            <h2><span class="counter3" id="count3">000</span>+</h2>
+            <p id="cla">Buiness Loan</p>
+        </div>
+    </div>
+    <script>
+        function startCounter(targetCount, duration) {
+            var startCount = 0;
+            var increment = 1;
+            var currentCount = startCount;
+
+            var counterInterval = setInterval(function () {
+                if (currentCount >= targetCount) {
+                    clearInterval(counterInterval);
+                    currentCount = targetCount;
+                } else {
+                    currentCount += increment;
+                }
+                document.getElementById("count").innerHTML = currentCount;
+            }, 400);
+        }
+
+        // Usage: Call startCounter function with targetCount and duration
+        startCounter(2000, 5);
+
+        function startCounter1(targetCount, duration) {
+            var startCount = 0;
+            var increment = 1;
+            var currentCount = startCount;
+
+            var counterInterval = setInterval(function () {
+                if (currentCount >= targetCount) {
+                    clearInterval(counterInterval);
+                    currentCount = targetCount;
+                } else {
+                    currentCount += increment;
+                }
+                document.getElementById("count1").innerHTML = currentCount;
+            }, 300);
+        }
+
+        // Usage: Call startCounter function with targetCount and duration
+        startCounter1(3000, 5);
+
+        function startCounter2(targetCount, duration) {
+            var startCount = 0;
+            var increment = 1;
+            var currentCount = startCount;
+
+            var counterInterval = setInterval(function () {
+                if (currentCount >= targetCount) {
+                    clearInterval(counterInterval);
+                    currentCount = targetCount;
+                } else {
+                    currentCount += increment;
+                }
+                document.getElementById("count2").innerHTML = currentCount;
+            }, 200);
+        }
+
+        // Usage: Call startCounter function with targetCount and duration
+        startCounter2(1000, 5);
+        function startCounter3(targetCount, duration) {
+            var startCount = 0;
+            var increment = 1;
+            var currentCount = startCount;
+
+            var counterInterval = setInterval(function () {
+                if (currentCount >= targetCount) {
+                    clearInterval(counterInterval);
+                    currentCount = targetCount;
+                } else {
+                    currentCount += increment;
+                }
+                document.getElementById("count3").innerHTML = currentCount;
+            }, 100);
+        }
+
+        // Usage: Call startCounter function with targetCount and duration
+        startCounter3(100, 5);
+    </script>
+    <footer>
+        <div id="date">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-solid fa-hashtag"></i>
+        </div>
+        <hr>
+        <div id="vero">
+            @2023 All copy rights
+        </div>
+    </footer>
+
+</body>
+
+</html>
